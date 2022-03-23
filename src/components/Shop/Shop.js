@@ -9,7 +9,7 @@ const Shop = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div className="shop-container">
+    <div className="shop-container my-5">
       <div className="products-container container">
         {products.map((product) => (
           <Product key={product.id} product={product}></Product>
